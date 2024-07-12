@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <link rel="icon" type="image/png" href="./Images/logo/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="about_us.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <span class="year">2018 - 2023</span>
+        <a href="main_page.html" class="logo"><img src="./Images/logo/icon.png" alt="logo"></a>
+        <a href="#" class="menu" onclick="toggleMenu();"></a>
+    </header>
+    <div class="banner">
+        <ul class="nav">
+            <li><a href="main_page.html"><ion-icon name="home" style="height:30px; width: 30px;"></ion-icon></a></li>
+            <li><a href="prod.html"><i class="fa-solid fa-shoe-prints" style="height:20px; width: 20px;"></i></a></li>
+            <li><a href=""><ion-icon name="cart" style="height:30px; width: 30px;"></ion-icon></a></li>
+            <li><a href="Registeration.html"><ion-icon name="log-in" style="height:30px; width: 30px;"></ion-icon></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- About -->
+    <div class="about" id="About">
+
+        <h1><span>About</span></h1>
+
+        <div class="about_main">
+            <div class="about_image">
+                <div class="about_small_image">
+                    <img src="./Images/about/red_shoes1.png" onclick="functio(this)">
+                    <img src="./Images/about/red_shoes2.png" onclick="functio(this)">
+                    <img src="./Images/about/red_shoes3.png" onclick="functio(this)">
+                    <img src="./Images/about/red_shoes4.png" onclick="functio(this)">
+                </div>
+
+                <div class="image_contaner">
+                    <img src="./Images/about/red_shoes1.png" id="imagebox">
+                </div>
+            </div>
+
+            <div class="about_text">
+                <p>
+                    Welcome to Step into Style, where your journey to impeccable style begins. We are not just a
+                    footwear store; we are your fashion destination, curated to bring you the latest trends in the world
+                    of shoes.
+                    <br><br>
+                    At Step into Style, we understand that shoes are not just an accessory; they are an expression of
+                    your personality, an extension of your style, and a reflection of your lifestyle. Our mission is to
+                    help you step out in confidence and comfort, whether you're strolling through the city streets,
+                    dancing the night away, or taking a leisurely hike in the great outdoors.
+                    <br><br>
+                    Step into Style is more than just a footwear store; it's a community of fashion enthusiasts, a
+                    source of inspiration, and a place where style and comfort merge effortlessly. Join us on this
+                    exciting journey, and let us help you put your best foot forward.
+                    <br><br>
+                    Thank you for choosing Step into Style as your go-to destination for all things shoes. We look
+                    forward to being a part of your style story.
+                    <br><br>
+                    Step into Style - Where Fashion Meets Comfort, One Step at a Time.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="prod.html" class="about_btn">Shop Now</a>
+    </div>
+    <br><br><br><br><br><br>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer_main">
+            <div class="tag">
+                <h1>Contact</h1>
+                <a href="#"><i class="fa-solid fa-house"></i>123/Rajasthan/India</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+91 1023456789</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>step_into_style@gmail.com</a>
+            </div>
+
+            <div class="tag">
+                <h1>Get Help</h1>
+                <a href="about_us.html" class="center">ABOUT US</a>
+                <a href="gallery.html" class="center">STYLE GALLERY</a>
+                <a href="our_services.html" class="center">OUR SERVICES</a>
+                <a href="customers_review.html" class="center">CUSTOMER'S REVIEW</a>
+            </div>
+
+            <div class="tag">
+                <h1>Our Stores</h1>
+                <a href="#" class="center">Sri Lanka</a>
+                <a href="#" class="center">USA</a>
+                <a href="#" class="center">India</a>
+                <a href="#" class="center">Japan</a>
+            </div>
+
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <div class="social_link">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="tag">
+                <h1>Newsletter</h1>
+                <div class="search_bar">
+                    <form action="fmail.php" method="post">
+                        <input type="email" name="email" placeholder="You email id here">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+        // JS code for Toggle menu and navigation on mobile 
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            const nav = document.querySelector('.nav');
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+
+
+        function functio(small) {
+            var full = document.getElementById("imagebox");
+            full.src = small.src
+        }
+    </script>
+
+    <!-- Scripting for Icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

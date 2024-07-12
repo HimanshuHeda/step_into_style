@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kids Wear</title>
+    <link rel="stylesheet" href="kids.css">
+    <link rel="icon" type="image/png" href="./Images/logo/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <span class="year">2018 - 2023</span>
+        <a href="index.html" class="logo"><img src="./Images/logo/icon.png" alt="logo"></a>
+        <a href="#" class="menu" onclick="toggleMenu();"></a>
+    </header>
+
+    <div class="banner">
+        <ul class="nav">
+            <li><a href="index.html"><ion-icon name="home" style="height:30px; width: 30px;"></ion-icon></a></li>
+            <li><a href="prod.html"><i class="fa-solid fa-shoe-prints" style="height:20px; width: 20px;"></i></a></li>
+            <li><button class="showcart" id="showCartButton"><ion-icon name="cart"
+                        style="height:30px; width: 30px;"></ion-icon></button></li>
+            <li><a href="Registeration.html"><ion-icon name="log-in" style="height:30px; width: 30px;"></ion-icon></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Products -->
+
+    <div class="products" id="Products">
+        <h1>Kids Footwear</h1>
+
+        <div class="box">
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="./Images/kids/1st.png" style="width: 80%;">
+                </div>
+
+                <div class="products_text">
+                    <h2>Liberty</h2>
+                    <h3>$100.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#" class="btn" onclick="addToCart('Liberty', 100.99, './Images/kids/1st.png')">Buy
+                        Now</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="./Images/kids/2nd.png" style="width: 70%;">
+                </div>
+
+                <div class="products_text">
+                    <h2>Campus</h2>
+                    <h3>$200.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn" onclick="addToCart('Campus', 200.99, './Images/kids/2nd.png')">Buy
+                        Now</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="./Images/kids/3rd.png" style="width: 70%;">
+                </div>
+
+                <div class="products_text">
+                    <h2>NEOBABY</h2>
+                    <h3>$175.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn" onclick="addToCart('Neobaby', 175.99, './Images/kids/3rd.png')">Buy
+                        Now</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="./Images/kids/4th.png" style="width: 70%;">
+                </div>
+
+                <div class="products_text">
+                    <h2>Plaeto</h2>
+                    <h3>$120.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn" onclick="addToCart('Plaeto', 120.99, './Images/kids/4th.png')">Buy
+                        Now</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="./Images/kids/5th.png" style="width: 70%;">
+                </div>
+
+                <div class="products_text">
+                    <h2>VICTOR</h2>
+                    <h3>$150.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#" class="btn" onclick="addToCart('Victor', 150.99, './Images/kids/5th.png')">Buy
+                        Now</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="./Images/kids/6th.png" style="width: 80%;">
+                </div>
+
+                <div class="products_text">
+                    <h2>Skechers</h2>
+                    <h3>$220.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn" onclick="addToCart('Skechers', 220.99, './Images/kids/6th.png')">Buy
+                        Now</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="./Images/kids/7th.png" style="width: 78%;">
+                </div>
+
+                <div class="products_text">
+                    <h2>Liberty</h2>
+                    <h3>$110.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <a href="#" class="btn" onclick="addToCart('Liberty', 110.99, './Images/kids/7th.png')">Buy
+                        Now</a>
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+
+                <div class="image">
+                    <img src="./Images/kids/8th.png" style="width: 70%;">
+                </div>
+
+                <div class="products_text">
+                    <h2>LANCER</h2>
+                    <h3>$150.99</h3>
+                    <div class="products_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="btn" onclick="addToCart('Lancer', 150.99, './Images/kids/8th.png')">Buy
+                        Now</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart">
+        <h2>Cart</h2><br>
+        <ul id="cart-items"></ul><br><br>
+        <p>Total: <span id="cart-total">$0.00</span></p><br>
+        <a href="billing_detail.html">Checkout</a>
+        <script src="cart.js"></script>
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="footer_main">
+            <div class="tag">
+                <h1>Contact</h1>
+                <a href="#"><i class="fa-solid fa-house"></i>123/Rajasthan/India</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+91 1023456789</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>step_into_style@gmail.com</a>
+            </div>
+
+            <div class="tag">
+                <h1>Get Help</h1>
+                <a href="about_us.html" class="center">ABOUT US</a>
+                <a href="gallery.html" class="center">STYLE GALLERY</a>
+                <a href="our_services.html" class="center">OUR SERVICES</a>
+                <a href="customers_review.html" class="center">CUSTOMER'S REVIEW</a>
+            </div>
+
+            <div class="tag">
+                <h1>Our Stores</h1>
+                <a href="#" class="center">Sri Lanka</a>
+                <a href="#" class="center">USA</a>
+                <a href="#" class="center">India</a>
+                <a href="#" class="center">Japan</a>
+            </div>
+
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <div class="social_link">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="tag">
+                <h1>Newsletter</h1>
+                <div class="search_bar">
+                    <form action="fmail.php" method="post">
+                        <input type="email" name="email" placeholder="You email id here">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- <p>&copy; 2021 All Rights Reserved</p> -->
+    </footer>
+
+
+    <script>
+        // JS code for Toggle menu and navigation on mobile 
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            const nav = document.querySelector('.nav');
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+
+    <!-- Scripting for Icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

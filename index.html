@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Step into Style</title>
+    <link rel="icon" type="image/png" href="./Images/logo/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <?php
+    session_start();
+    if (!isset($_SESSION["username"]))
+        header("location:Registeration.html");
+    ?>
+    <div id="preloader"></div>
+    <header>
+        <span class="year">2018 - 2023</span>
+        <a href="index.html" class="logo"><img src="./Images/logo/icon.png" alt="logo"></a>
+        <a href="#" class="menu" onclick="toggleMenu();"></a>
+    </header>
+
+    <div class="banner">
+        <ul class="nav">
+            <li><a href="index.html"><ion-icon name="home" style="height:30px; width: 30px;"></ion-icon></a></li>
+            <li><a href="prod.html"><i class="fa-solid fa-shoe-prints" style="height:20px; width: 20px;"></i></a></li>
+            <li><a href="billing_detail.html"><ion-icon name="cart" style="height:30px; width: 30px;"></ion-icon></a>
+            </li>
+            <?php
+            if (!isset($_SESSION["username"]))
+            echo "<li><a href='Registeration.html'><ion-icon name='log-in'
+                        style='height:30px; width: 30px;'></ion-icon></a>
+            </li>";
+            else
+            echo "<li><a href='logout.php'><ion-icon name='log-out'
+                        style='height:30px; width: 30px;'></ion-icon></a>
+            </li>";
+            ?>
+        </ul>
+
+        <div class="bg-vedio-list">
+            <video class="bg-video shoes-1 active" src="Videos/home/1st.mp4" autoplay loop muted></video>
+            <video class="bg-video shoes-2" src="Videos/home/2nd.mp4" autoplay loop muted></video>
+            <video class="bg-video shoes-3" src="Videos/home/3rd.mp4" autoplay loop muted></video>
+            <video class="bg-video shoes-4" src="Videos/home/4th.mp4" autoplay loop muted></video>
+            <video class="bg-video shoes-5" src="Videos/home/5th.mp4" autoplay loop muted></video>
+        </div>
+
+        <div class="content">
+            <h1>Sneakers</h1>
+            <br><br>
+            <p>Snickers shoes are renowned for their quality and comfort, designed for professionals who demand
+                durability and style. <br>Explore our range of work footwear that combines performance and fashion</p>
+            <a href="prod.html">Enquire</a>
+        </div>
+
+        <div class="screen">
+            <div class="shadow"></div>
+            <div>
+                <span style="--i: 0">
+                    <!-- Insert the screen video 
+                    Video data mapping 
+                    match the video name with the class name  -->
+                    <video src="Videos/home/1st.mp4" class="trailer mclaren-1 screewn-video active" autoplay loop
+                        muted></video>
+                    <video src="Videos/home/2nd.mp4" class="trailer mclaren-2 screewn-video" autoplay loop
+                        muted></video>
+                    <video src="Videos/home/1st.mp4" class="trailer mclaren-3 screewn-video" autoplay loop
+                        muted></video>
+                    <video src="Videos/home/1st.mp4" class="trailer mclaren-4 screewn-video" autoplay loop
+                        muted></video>
+                    <video src="Videos/home/1st.mp4" class="trailer mclaren-5 screewn-video" autoplay loop
+                        muted></video>
+                </span>
+                <span style="--i: 1">
+                    <video src="Videos/home/2nd.mp4" class="screen-video" autoplay loop muted></video>
+                </span>
+                <span style="--i: 2">
+                    <video src="Videos/home/3rd.mp4" class="screen-video" autoplay loop muted></video>
+                </span>
+                <span style="--i: 3">
+                    <video src="Videos/home/4th.mp4" class="screen-video" autoplay loop muted></video>
+                </span>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="carousel">
+                <a class="carousel-item" href="" onclick="changeVideo('shoes-1');"><img src="./Images/home/5th.jpg"></a>
+                <a class="carousel-item" href="" onclick="changeVideo('shoes-2');"><img src="./Images/home/2nd.jpg"></a>
+                <a class="carousel-item" href="" onclick="changeVideo('shoes-3');"><img src="./Images/home/3rd.jpg"></a>
+                <a class="carousel-item" href="" onclick="changeVideo('shoes-4');"><img src="./Images/home/1st.jpg"></a>
+                <a class="carousel-item" href="" onclick="changeVideo('shoes-5');"><img src="./Images/home/4th.jpg"></a>
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer_main">
+            <div class="tag">
+                <h1>Contact</h1>
+                <a href="#"><i class="fa-solid fa-house"></i>123/Rajasthan/India</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+91 1023456789</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>step_into_style@gmail.com</a>
+            </div>
+
+            <div class="tag">
+                <h1>Get Help</h1>
+                <a href="about_us.html" class="center">ABOUT US</a>
+                <a href="gallery.html" class="center">STYLE GALLERY</a>
+                <a href="our_services.html" class="center">OUR SERVICES</a>
+                <a href="customers_review.html" class="center">CUSTOMER'S REVIEW</a>
+            </div>
+
+            <div class="tag">
+                <h1>Our Stores</h1>
+                <a href="#" class="center">Sri Lanka</a>
+                <a href="#" class="center">USA</a>
+                <a href="#" class="center">India</a>
+                <a href="#" class="center">Japan</a>
+            </div>
+
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <div class="social_link">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="tag">
+                <h1>Newsletter</h1>
+                <div class="search_bar">
+                    <form action="fmail.php" method="post">
+                        <input type="email" name="email" placeholder="You email id here">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!-- <p>&copy; 2021 All Rights Reserved</p> -->
+    </footer>
+
+
+    <script>
+        // Preloader 
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+
+
+
+        // JS code for Toggle menu and navigation on mobile 
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            const nav = document.querySelector('.nav');
+            menu.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+        // Change the background video when click on the gallery images
+        function changeVideo(name) {
+            const bgVideoList = document.querySelectorAll('.bg-video');
+            const trailers = document.querySelectorAll('.trailer');
+            const models = document.querySelectorAll('.model');
+
+            // JavaScript higher order array function forEach
+            // this is easier to do data mapping 
+            bgVideoList.forEach(video => {
+                video.classList.remove('active');
+                if (video.classList.contains(name)) {
+                    video.classList.add('active');
+                }
+            });
+        }
+
+    </script>
+
+
+    <!-- Gallery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        // Gallery 
+        $(document).ready(
+            function () {
+                $('.carousel').carousel();
+            }
+        );
+    </script>
+
+    <!-- Scripting for Icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

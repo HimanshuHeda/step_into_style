@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <link rel="icon" type="image/png" href="Images/logo/icon.png" style="border-radius: 50;">
+    <link rel="stylesheet" href="sign_up.css">
+
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="container">
+        <div class="image">
+            <div class="form-box">
+                <div class="form">
+                    <form method="post" action="signup.php">
+                        <h2>Sign-Up</h2>
+                        <div class="input-box">
+                            <input type="text" name="username" required>
+                            <label><ion-icon name="person"></ion-icon> Username</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" name="email" required>
+                            <label><ion-icon name="mail"></ion-icon> Email</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" name="pwd" required>
+                            <label><ion-icon name="lock-closed"></ion-icon> Password</label>
+                        </div>
+                        <div class="group">
+                            <a href="">Already Have an Account ?</a>
+                            <a href="Registeration.html">Login</a>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        // JS Code For Cursor Animation Effect
+
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+
+        // follow cursor on mousemove
+        document.addEventListener("mousemove", (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+
+            cursor.style.top = y + "px";
+            cursor.style.left = x + "px";
+            cursor.style.display = "block";
+
+            // cursor effects on mouse stopped
+            function mouseStopped() {
+                cursor.style.display = "none";
+            }
+            clearTimeout(timeout);
+            timeout = setTimeout(mouseStopped, 1000);
+        });
+
+        // cursor effects on mouseout
+        document.addEventListener("mouseout", () => {
+            cursor.style.display = "none";
+        });
+
+
+        function myFunction() {
+            var x = document.getElementById("myInput1");
+            if (x.type == "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>

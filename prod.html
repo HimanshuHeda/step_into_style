@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Product catagories</title>
+  <link rel="icon" type="image/png" href="./Images/logo/icon.png">
+  <link rel="stylesheet" href="prod.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <span class="year">2018 - 2023</span>
+    <a href="index.html" class="logo"><img src="./Images/logo/icon.png" alt="logo"></a>
+    <a href="#" class="menu" onclick="toggleMenu();"></a>
+  </header>
+
+  <div class="banner">
+    <ul class="nav">
+      <li><a href="index.html"><ion-icon name="home" style="height:30px; width: 30px;"></ion-icon></a></li>
+      <li><a href="prod.html"><i class="fa-solid fa-shoe-prints" style="height:20px; width: 20px;"></i></a></li>
+      <li><a href=""><ion-icon name="cart" style="height:30px; width: 30px;"></ion-icon></a></li>
+      <li><a href="Registeration.html"><ion-icon name="log-in" style="height:30px; width: 30px;"></ion-icon></a></li>
+    </ul>
+  </div>
+  <main class="main">
+    <section class="card-area">
+      <!-- Card:  -->
+      <section class="card-section">
+        <div class="card">
+          <div class="flip-card">
+            <div class="flip-card__container">
+              <div class="card-front">
+                <div class="card-front__tp card-front__tp--city">
+                  <img src="./asset/building.svg" alt="">
+                  <h2 class="card-front__heading">Mens Wear</h2>
+                  <p class="card-front__text-price">From 1500</p>
+                </div>
+
+                <div class="card-front__bt">
+                  <p class="card-front__text-view card-front__text-view--city">
+                    View me
+                  </p>
+                </div>
+              </div>
+              <div class="card-back">
+                <video class="video__container" autoplay muted loop>
+                  <source class="video__media" src="Videos/product/mans.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="inside-page">
+            <div class="inside-page__container">
+              <h3 class="inside-page__heading inside-page__heading--city">
+                For Mans
+              </h3>
+              <p class="inside-page__text">
+                Step into style with our curated collection of men's wear,
+                blending modern trends with classic elegance for every occasion.
+              </p>
+              <a href="mens.html" class="inside-page__btn inside-page__btn--city">View deals</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card:  -->
+      <section class="card-section">
+        <div class="card">
+          <div class="flip-card">
+            <div class="flip-card__container">
+              <div class="card-front">
+                <div class="card-front__tp card-front__tp--ski">
+                  <img src="./asset/mountains-sun.svg" alt="">
+                  <h2 class="card-front__heading">Womans Wear</h2>
+                  <p class="card-front__text-price">From 2000</p>
+                </div>
+
+                <div class="card-front__bt">
+                  <p class="card-front__text-view card-front__text-view--ski">
+                    View me
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-back">
+                <video class="video__container" autoplay muted loop>
+                  <source class="video__media" src="Videos/product/women.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="inside-page">
+            <div class="inside-page__container">
+              <h3 class="inside-page__heading inside-page__heading--ski">
+                For Womans
+              </h3>
+              <p class="inside-page__text">
+                Step into elegance and grace with our curated collection.
+                Embrace confidence through fashion-forward choices
+              </p>
+              <a href="womens.html" class="inside-page__btn inside-page__btn--ski">View deals</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card:  -->
+      <section class="card-section">
+        <div class="card">
+          <div class="flip-card">
+            <div class="flip-card__container">
+              <div class="card-front">
+                <div class="card-front__tp card-front__tp--beach">
+                  <img src="./asset/sun.svg" alt="">
+
+                  <h2 class="card-front__heading">Kids Wear</h2>
+                  <p class="card-front__text-price">From 1000</p>
+                </div>
+
+                <div class="card-front__bt">
+                  <p class="card-front__text-view card-front__text-view--beach">
+                    View me
+                  </p>
+                </div>
+              </div>
+              <div class="card-back">
+                <video class="video__container" autoplay muted loop>
+                  <source class="video__media" src="Videos/product/kid.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="inside-page">
+            <div class="inside-page__container">
+              <h3 class="inside-page__heading inside-page__heading--beach">
+                For Kids
+              </h3>
+              <p class="inside-page__text">
+                Explore vibrant collections that let kids step into style effortlessly.
+                Dress your little ones in fashion-forward comfort.
+              </p>
+              <a href="kids.html" class="inside-page__btn inside-page__btn--beach">View deals</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        // JS code for Toggle menu and navigation on mobile 
+        function toggleMenu() {
+          const menu = document.querySelector('.menu');
+          const nav = document.querySelector('.nav');
+          menu.classList.toggle('active');
+          nav.classList.toggle('active');
+        }
+      </script>
+
+      <!-- Scripting for Icons  -->
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </main>
+
+  <!--Footer-->
+  <footer>
+    <div class="footer_main">
+      <div class="tag">
+        <h1>Contact</h1>
+        <a href="#"><i class="fa-solid fa-house"></i>123/Rajasthan/India</a>
+        <a href="#"><i class="fa-solid fa-phone"></i>+91 1023456789</a>
+        <a href="#"><i class="fa-solid fa-envelope"></i>step_into_style@gmail.com</a>
+      </div>
+
+      <div class="tag">
+        <h1>Get Help</h1>
+        <a href="about_us.html" class="center">ABOUT US</a>
+        <a href="gallery.html" class="center">STYLE GALLERY</a>
+        <a href="our_services.html" class="center">OUR SERVICES</a>
+        <a href="customers_review.html" class="center">CUSTOMER'S REVIEW</a>
+      </div>
+
+      <div class="tag">
+        <h1>Our Stores</h1>
+        <a href="#" class="center">Sri Lanka</a>
+        <a href="#" class="center">USA</a>
+        <a href="#" class="center">India</a>
+        <a href="#" class="center">Japan</a>
+      </div>
+
+      <div class="tag">
+        <h1>Follow Us</h1>
+        <div class="social_link">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="tag">
+        <h1>Newsletter</h1>
+        <div class="search_bar">
+          <form action="fmail.php" method="post">
+            <input type="email" name="email" placeholder="You email id here">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <p>&copy; 2021 All Rights Reserved</p> -->
+  </footer>
+</body>
+
+</html>
