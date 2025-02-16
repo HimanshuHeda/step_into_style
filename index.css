@@ -477,77 +477,146 @@ header .menu.active{
 /*Footer*/
 
 footer{
-    width: 100%;
+  color:rgba(255, 255, 255, 0.548);
+  width: 100%;
+  background: #000;
+  border:1px solid white;
+  border-top-left-radius: 155px;
+  font-size: 16px;
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-
-footer .footer_main{
-    width: 100%;
-    background: #f3f1f1;
+ .footer_main{
+    width:100%;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:4em 8em 0em;
+}
+footer p{
+    width:100%;
+    color: #0a0a0a;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.footer_main .tag h4{
+    color:white;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-footer .footer_main .tag{
-    margin: 10px 0;
+.footer_main .tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 25%; /* Adjust as needed */
+    margin-bottom: 20px; /* Space between tag groups */
+}
+.footer_main .tag  a{
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none; /* Remove underlines from links */
+    margin-bottom: 10px; /* Space between links within a tag */
+    text-decoration: none;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(245, 245, 245, 0.363);
+    text-overflow: ellipsis;
+    margin: 4px;
 }
 
-footer .footer_main .tag .center{
+.tag.contact a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.tag.contact a i {
+    font-size: 18px;
+    min-width: 25px;
     text-align: center;
 }
-
-footer .footer_main .tag h1{
-    font-size: 25px;
-    margin: 25px 0;
-    color: #1c0080;
+.tag .search_bar button{
+   padding:10px;
+   border:none;
+   border-radius: 15px;
+   font-weight: 600;
 }
-
-footer .footer_main .tag a{
-    display: block;
-    color: black;
-    text-decoration: none;
-    margin: 9px 0;
-}
-
-footer .footer_main .tag a i{
-    padding: 0 10px;
-    transition: 0.3;
-}
-
-footer .footer_main .tag a i:hover{
-    color: #c72092;
-}
-
-footer .footer_main .tag .social_link{
+.tag .search_bar button:hover{
+    background: linear-gradient(-45deg, #c72092 , #6c14d0);
+    color: #fff;
+    transition: 1s;
+ }
+ .Follow_us h4{
+    color:white;
+    font-size: 40px;
+ }
+.Follow_us{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    margin-bottom:10px;
 }
 
-footer .footer_main .tag .social_link a{
+.Follow_us .social_link a{
+    padding:10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in; /* Smooth transition */
+}
+
+.Follow_us .social_link a:hover {
+    background-image: linear-gradient(to right, pink, purple);
+    border-color: transparent; /* Remove border on hover */
+    
+}
+footer .Follow_us .social_link{
+    width: 100%; 
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+}
+
+footer .Follow_us .social_link a{
     width: 30px;
     height: 30px;
-    border-radius: 50%;
     text-align: center;
     text-decoration: none;
     color: black;
     box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
     position: relative;
-    margin: 0 5px;
     z-index: 10;
     overflow: hidden;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-flex; /* Use inline-flex for centering within <a> */
+    align-items: center; /* Center icon vertically within <a> */
+    justify-content: center; /* Center icon horizontally within <a> */
+    padding: 8px; /* Padding now affects the content INSIDE the centered icon */
+    margin-right: 10px;
 }
 
-footer .footer_main .tag .social_link a .fa-brands{
-    font-size: 15px;
-    line-height: 30px;
+footer .Follow_us .social_link a .fa-brands{
+    font-size: 1.25rem;
+    width:20px;
     z-index: 10;
     position: relative;
-    transition: 0.5s;
+    transition: 0.5s;  
+    color: #fff;
 }
 
-footer .footer_main .tag .social_link a:hover i{
+footer .Follow_us .social_link a:hover i{
     color: white;
 }
 
-footer .footer_main .tag .social_link a::after{
+footer .Follow_us .social_link a::after{
     content: '';
     width: 100%;
     height: 100%;
@@ -559,50 +628,9 @@ footer .footer_main .tag .social_link a::after{
     transition: 0.5s;
 }
 
-footer .footer_main .tag .social_link a:hover::after{
+footer .Follow_us .social_link a:hover::after{
     left: 0;
 }
-
-footer .footer_main .tag .search_bar{
-    width: 230px;
-    height: 30px;
-    background: rgb(202, 202, 202);
-    border-radius: 25px;
-    position: relative;
-}
-
-footer .footer_main .tag .search_bar input{
-    width: 200px;
-    /* padding: 2px 0; */
-    position: absolute;
-    top: -23%;
-    left: 6%;
-    border: none;
-    background: none;
-    outline: none;
-    font-size: 13px;
-}
-
-footer .footer_main .tag .search_bar button{
-    padding: 7px 15px;
-    background: linear-gradient(to right, #c72092 , #6c14d0);
-    border: none;
-    margin-top: 62px;
-    border-radius: 25px;
-    color: white;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-/* Responsive Designs */
 @media (max-width: 600px){
     header{
         padding: 20px 50px;
