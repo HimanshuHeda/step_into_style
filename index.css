@@ -566,9 +566,13 @@ footer .footer_main .tag .social_link a:hover::after{
 footer .footer_main .tag .search_bar{
     width: 230px;
     height: 30px;
-    background: rgb(202, 202, 202);
+    background: rgba(202, 202, 202, 0.4);
     border-radius: 25px;
     position: relative;
+}
+
+footer .footer_main .tag .search_bar input::placeholder{
+    color: #000;
 }
 
 footer .footer_main .tag .search_bar input{
@@ -581,6 +585,7 @@ footer .footer_main .tag .search_bar input{
     background: none;
     outline: none;
     font-size: 13px;
+    color: black;
 }
 
 footer .footer_main .tag .search_bar button{
